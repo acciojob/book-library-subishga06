@@ -1,34 +1,96 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Library</title>
+  <style>
+    /* Page background */
+    body {
+      background-color: #f8f8f8;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Library container */
+    .book-library {
+      background-color: #ffffff;
+      max-width: 600px;
+      margin: 30px auto;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      border-radius: 5px;
+    }
+
+    /* Header */
+    .book-library h1 {
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    /* Individual book block */
+    .book {
+      background-color: #fff;
+      padding: 15px;
+      margin-bottom: 20px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      text-align: center;
+    }
+
+    .book img {
+      width: 180px;
+      height: auto;
+      margin-bottom: 10px;
+      border-radius: 3px;
+    }
+
+    .book h3 {
+      font-size: 16px;
+      margin: 5px 0;
+    }
+
+    .book p {
+      margin: 3px 0;
+      color: #777777;
+    }
+
+    .price {
+      background-color: #2ecc71;
+      color: #ffffff;
+      font-weight: bold;
+      padding: 6px 0;
+      border-radius: 3px;
+      margin-top: 10px;
+    }
+  </style>
 </head>
 <body>
-  <h1>Book Library</h1>
-
   <div class="book-library">
+    <h1>Book Library</h1>
+
     <div class="book">
-      <img src="https://m.media-amazon.com/images/I/81Xb8UiyIPL._AC_UF1000,1000_QL80_.jpg" alt="Spy in the Amber" width="150px">
-      <h2>Spy in the Amber</h2>
-      <p class="author">By Khushwant Singh</p>
-      <div class="price-block">$15.99</div>
+      <img src="https://m.media-amazon.com/images/I/71FBVGr4X0L._AC_UF894,1000_QL80_.jpg" alt="Spy in the Amber">
+      <h3>SPY IN THE AMBER</h3>
+      <p>By Manohar Malgonkar</p>
+      <div class="price">Rs. 250</div>
     </div>
 
     <div class="book">
-      <img src="https://m.media-amazon.com/images/I/71uL+8dW3aL._AC_UF1000,1000_QL80_.jpg" alt="Sacred Games" width="150px">
-      <h2>Sacred Games</h2>
-      <p class="author">By Vikram Chandra</p>
-      <div class="price-block">$18.50</div>
+      <img src="https://m.media-amazon.com/images/I/71aG+xDKSYL._AC_UF1000,1000_QL80_.jpg" alt="Sacred Games">
+      <h3>Sacred Games</h3>
+      <p>By Vikram Chandra</p>
+      <div class="price">Rs. 190</div>
     </div>
 
     <div class="book">
-      <img src="https://m.media-amazon.com/images/I/81+G9aP7bUL._AC_UF1000,1000_QL80_.jpg" alt="Byomkesh Bakshi" width="150px">
-      <h2>Byomkesh Bakshi</h2>
-      <p class="author">By Sharadindu Bandyopadhyay</p>
-      <div class="price-block">$12.75</div>
+      <img src="https://m.media-amazon.com/images/I/61oyF9UuA+L._AC_UF1000,1000_QL80_.jpg" alt="Byomkesh Bakshi">
+      <h3>BYOMKESH BAKSHI</h3>
+      <p>By Sharadindu Bandyopadhyay</p>
+      <div class="price">Rs. 240</div>
     </div>
   </div>
-
-  <script type="text/javascript" src="./script.js"></script>
 </body>
 </html>
